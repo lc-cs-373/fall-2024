@@ -508,3 +508,9 @@ public Type toType() {
   return new IntType();
 }
 %%%
+VarRef
+%%%
+public Ref evalRef(Env env) {
+    return new VarRef(env.applyEnvRef(var));
+}
+%%%
